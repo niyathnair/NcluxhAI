@@ -1,0 +1,64 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create env file
+        run: |
+          echo "${{ secrets.MY_ENV_VARIABLES }}" > .env
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          load: true
+          tags: storyverse:test
+          file: Dockerfile.backend
+          build-args: MODE=production
+
+      - name: Run container and test
+        run: |
+          docker run -d -p 8000:8000 --name storyverse-test-container storyverse:test
+          
+          # Wait for the container to be healthy
+          max_wait_time=150  # 2.5 minutes
+          start_time=$(date +%s)
+          while true; do
+            health_status=$(docker inspect --format='{{.State.Health.Status}}' storyverse-test-container)
+            if [ "$health_status" = "healthy" ]; then
+              echo "Container is healthy"
+              break
+            elif [ "$health_status" = "unhealthy" ]; then
+              echo "Container health check failed"
+              docker logs storyverse-test-container
+              exit 1
+            fi
+            current_time=$(date +%s)
+            elapsed_time=$((current_time - start_time))
+            if [ $elapsed_time -ge $max_wait_time ]; then
+              echo "Timeout: Container did not become healthy within $max_wait_time seconds"
+              docker logs storyverse-test-container
+              exit 1
+            fi
+            echo "Waiting for container to become healthy... (${elapsed_time}s)"
+            sleep 5
+          done
+
+      - name: Clean up
+        if: always()
+        run: |
+        
+          docker stop storyverse-test-container || true
+          docker rm storyverse-test-container || true

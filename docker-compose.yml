@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - 8000:8000
+    environment:
+      - MODE=production
+    volumes:
+      - ./result:/app/result
+      - ./media_storage:/app/media_storage
+    env_file:
+      - .env

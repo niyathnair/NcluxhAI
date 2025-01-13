@@ -1,0 +1,1 @@
+# Ensures legal and regulatory compliance

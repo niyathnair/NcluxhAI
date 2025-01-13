@@ -1,0 +1,1 @@
+#Analyzes strategic risks

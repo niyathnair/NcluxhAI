@@ -1,0 +1,45 @@
+# Project-wide rules
+
+- Use the LOGGER from core/logger.py for all logging instead of print statements
+- Import the LOGGER as: from core.logger import LOGGER
+- Use appropriate log levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
+- Follow PEP 8 style guidelines for Python code
+- Use type hints for function parameters and return values
+- Use async/await for asynchronous operations
+- Use environment variables for configuration, loaded via python-dotenv
+- Handle exceptions and log errors appropriately
+- Always define schemas for api requests and responses and
+- Always use core/prompts/templates/ for prompts written in yaml and use prompt manager tool to load them in core/prompts/manager.py
+- Always use enums for constants for models and agents
+
+# Database operations
+
+- Use core/database_manager.py tool for database operations
+- Implement database operations in core/database_manager.py
+
+# Redis operations
+
+- Use the Redis pub sub consumer from core/events/consumer.py and update it when new events are created in core/events/
+- Handle Redis connection errors gracefully
+
+# FastAPI
+
+- Define API routes in separate files under the api/router directory
+- Use Pydantic models for request/response validation
+- Implement proper error handling and return appropriate HTTP status codes
+
+# Agent operations
+
+- Implement agent-specific logic in separate files under the agentcrew/ directory
+
+# Logging examples
+
+- LOGGER.debug("Detailed information, typically of interest only when diagnosing problems.")
+- LOGGER.info("Confirmation that things are working as expected.")
+- LOGGER.warning("An indication that something unexpected happened, or indicative of some problem in the near future.")
+- LOGGER.error("Due to a more serious problem, the software has not been able to perform some function.")
+- LOGGER.critical("A serious error, indicating that the program itself may be unable to continue running.")
+
+# Remember to import the logger at the top of each file:
+
+from core.logger import LOGGER
