@@ -1,5 +1,5 @@
 prompt: |
-  Analyze the following test report against the compliance requirement:
+  Analyze the following data privacy compliance test report against the requirement:
 
   Test Report:
   {test_report}
@@ -8,10 +8,23 @@ prompt: |
   ID: {requirement_id}
   Description: {requirement_description}
 
-  Please analyze if the test report meets this requirement and provide:
-  1. Compliance status (compliant/non_compliant/needs_review)
-  2. Confidence score (0-1)
-  3. Brief explanation
-  4. Suggested actions if non-compliant
+  Focus on evaluating:
+  1. Consent Management (collection, purpose limitation)
+  2. Data Security (encryption, breach notification, access controls)
+  3. Data Subject Rights (access, correction, erasure, portability)
+  4. International Data Transfers
 
-  Respond in JSON format.
+  For each applicable area, analyze:
+  - Implementation status
+  - Completeness of measures
+  - Technical adequacy
+  - Compliance with time requirements
+  - Documentation quality
+
+  Please provide your analysis in JSON format with:
+  {
+    "status": "compliant|non_compliant|needs_review",
+    "confidence_score": <float between 0-1>,
+    "explanation": <detailed analysis based on the above criteria>,
+    "suggested_actions": [<list of specific improvements if needed>]
+  }
