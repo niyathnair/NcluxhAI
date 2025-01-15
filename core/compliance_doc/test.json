@@ -1,0 +1,65 @@
+{
+    "test_id": "GDPR_DPDP_TEST_001",
+    "timestamp": "2024-03-20T14:30:00Z",
+    "system_name": "User Data Management System",
+    "test_results": {
+        "consent_management": {
+            "consent_collection": {
+                "status": "implemented",
+                "details": "System collects explicit consent through web form",
+                "language_support": ["English", "Hindi", "Tamil"],
+                "consent_withdrawal": "Available through user dashboard"
+            },
+            "purpose_limitation": {
+                "status": "implemented",
+                "purposes_defined": ["Marketing", "Analytics", "Service Delivery"],
+                "purpose_binding": "Enforced through data access controls"
+            }
+        },
+        "data_security": {
+            "encryption": {
+                "status": "implemented",
+                "at_rest": "AES-256",
+                "in_transit": "TLS 1.3"
+            },
+            "breach_notification": {
+                "status": "implemented",
+                "detection_time": "< 24 hours",
+                "notification_process": "Automated email + manual review",
+                "notification_timeline": "Within 72 hours"
+            },
+            "access_controls": {
+                "status": "implemented",
+                "authentication": "Multi-factor",
+                "authorization": "Role-based"
+            }
+        },
+        "data_subject_rights": {
+            "access_mechanism": {
+                "status": "implemented",
+                "method": "Self-service portal",
+                "response_time": "Within 48 hours"
+            },
+            "correction_mechanism": {
+                "status": "implemented",
+                "method": "Self-service portal + support ticket"
+            },
+            "erasure_mechanism": {
+                "status": "implemented",
+                "method": "Automated with manual verification",
+                "completion_time": "Within 7 days"
+            },
+            "data_portability": {
+                "status": "partially_implemented",
+                "supported_formats": ["JSON", "CSV"],
+                "automated_export": "In development"
+            }
+        },
+        "international_transfers": {
+            "status": "implemented",
+            "mechanisms": ["Standard Contractual Clauses"],
+            "countries": ["EU", "UK", "US"],
+            "documentation": "Complete and updated"
+        }
+    }
+}

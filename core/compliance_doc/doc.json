@@ -1,0 +1,196 @@
+{
+    "compliance_documents": [
+        {
+            "doc_id": "DPDP001",
+            "title": "DPDP Consent and Purpose Limitation",
+            "category": "dpdp",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "DPDP001.1",
+                    "description": "Valid consent must be obtained before processing personal data, with clear notice in English or any language specified in the Eighth Schedule"
+                },
+                {
+                    "id": "DPDP001.2",
+                    "description": "Personal data should only be processed for the specified lawful purpose for which consent was given"
+                },
+                {
+                    "id": "DPDP001.3",
+                    "description": "Data principals (individuals) must have the right to withdraw consent at any time"
+                }
+            ]
+        },
+        {
+            "doc_id": "DPDP002",
+            "title": "DPDP Data Security and Breach Notification",
+            "category": "dpdp",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "DPDP002.1",
+                    "description": "Implement reasonable security safeguards to prevent personal data breach"
+                },
+                {
+                    "id": "DPDP002.2",
+                    "description": "Notify the Data Protection Board and affected data principals of any personal data breach"
+                },
+                {
+                    "id": "DPDP002.3",
+                    "description": "Maintain records of all personal data processing activities"
+                }
+            ]
+        },
+        {
+            "doc_id": "DPDP003",
+            "title": "DPDP Data Principal Rights",
+            "category": "dpdp",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "DPDP003.1",
+                    "description": "Provide mechanism for data principals to access summary of personal data being processed"
+                },
+                {
+                    "id": "DPDP003.2",
+                    "description": "Allow data principals to correct inaccurate or misleading personal data"
+                },
+                {
+                    "id": "DPDP003.3",
+                    "description": "Enable data principals to erase their personal data when purpose is complete"
+                }
+            ]
+        },
+        {
+            "doc_id": "GDPR001",
+            "title": "GDPR Lawful Processing and Consent",
+            "category": "gdpr",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "GDPR001.1",
+                    "description": "Process personal data lawfully, fairly, and transparently"
+                },
+                {
+                    "id": "GDPR001.2",
+                    "description": "Obtain explicit consent that is freely given, specific, informed, and unambiguous"
+                },
+                {
+                    "id": "GDPR001.3",
+                    "description": "Demonstrate that consent was given (maintain consent records)"
+                }
+            ]
+        },
+        {
+            "doc_id": "GDPR002",
+            "title": "GDPR Data Subject Rights",
+            "category": "gdpr",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "GDPR002.1",
+                    "description": "Provide mechanism for right to access (Subject Access Request)"
+                },
+                {
+                    "id": "GDPR002.2",
+                    "description": "Implement right to be forgotten (erasure)"
+                },
+                {
+                    "id": "GDPR002.3",
+                    "description": "Enable data portability in structured, commonly used format"
+                },
+                {
+                    "id": "GDPR002.4",
+                    "description": "Allow objection to processing based on legitimate interests"
+                }
+            ]
+        },
+        {
+            "doc_id": "GDPR003",
+            "title": "GDPR Security and Breach Notification",
+            "category": "gdpr",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "GDPR003.1",
+                    "description": "Implement appropriate technical and organizational security measures"
+                },
+                {
+                    "id": "GDPR003.2",
+                    "description": "Report data breaches to supervisory authority within 72 hours"
+                },
+                {
+                    "id": "GDPR003.3",
+                    "description": "Notify affected individuals of high-risk breaches without undue delay"
+                }
+            ]
+        },
+        {
+            "doc_id": "GDPR004",
+            "title": "GDPR Data Protection Principles",
+            "category": "gdpr",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "GDPR004.1",
+                    "description": "Ensure purpose limitation (data collected for specified, explicit, legitimate purposes)"
+                },
+                {
+                    "id": "GDPR004.2",
+                    "description": "Implement data minimization (adequate, relevant, limited to necessary)"
+                },
+                {
+                    "id": "GDPR004.3",
+                    "description": "Maintain accuracy and keep personal data up to date"
+                },
+                {
+                    "id": "GDPR004.4",
+                    "description": "Implement storage limitation (kept no longer than necessary)"
+                }
+            ]
+        },
+        {
+            "doc_id": "GDPR005",
+            "title": "GDPR International Transfers",
+            "category": "gdpr",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "GDPR005.1",
+                    "description": "Ensure adequate level of protection for international data transfers"
+                },
+                {
+                    "id": "GDPR005.2",
+                    "description": "Use appropriate safeguards (SCCs, BCRs) for international transfers"
+                },
+                {
+                    "id": "GDPR005.3",
+                    "description": "Document international transfer mechanisms and maintain records"
+                }
+            ]
+        },
+        {
+            "doc_id": "COMMON001",
+            "title": "Common Data Protection Requirements",
+            "category": "common",
+            "version": "1.0",
+            "requirements": [
+                {
+                    "id": "COMMON001.1",
+                    "description": "Maintain comprehensive data processing records and documentation"
+                },
+                {
+                    "id": "COMMON001.2",
+                    "description": "Implement privacy by design and default principles"
+                },
+                {
+                    "id": "COMMON001.3",
+                    "description": "Conduct regular data protection impact assessments"
+                },
+                {
+                    "id": "COMMON001.4",
+                    "description": "Provide regular data protection training to staff"
+                }
+            ]
+        }
+    ]
+}
