@@ -3,7 +3,6 @@ import logging
 import autogen
 from core.config.agent import get_agent_config
 from core.prompts.manager import prompt_manager
-from core.database_manager import db_manager
 
 
 
@@ -33,11 +32,4 @@ class BaseAgent:
         response = self.user_proxy.last_message()["content"]
         return response
 
-    def handle_error(self, story_id: str, error_status: str, error: Exception):
-        logging.error(
-            f"Error in agent '{self.agent.name}' for story {story_id}: {error}"
-        )
-        asyncio.create_task(
-            db_manager.update_document(StoryModel, story_id, {"status": error_status})
-        )
-        raise error
+    
