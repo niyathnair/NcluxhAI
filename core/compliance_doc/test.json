@@ -1,5 +1,6 @@
 {
     "test_id": "GDPR_DPDP_TEST_001",
+    "location": "EU",
     "timestamp": "2024-03-20T14:30:00Z",
     "system_name": "User Data Management System",
     "test_results": {

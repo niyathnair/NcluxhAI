@@ -1,0 +1,238 @@
+{
+  "report_metadata": {
+    "agent_name": "ComplianceAgent",
+    "timestamp": "2025-01-17T10:46:48.678270",
+    "analysis_type": "Compliance Analysis"
+  },
+  "summary": {
+    "total_requirements": 21,
+    "compliant": 0,
+    "non_compliant": 0,
+    "needs_review": 21,
+    "compliance_rate": 0.0
+  },
+  "detailed_results": {
+    "GDPR001": [
+      {
+        "requirement_id": "GDPR001.1",
+        "category": "gdpr001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR001.2",
+        "category": "gdpr001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR001.3",
+        "category": "gdpr001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ],
+    "GDPR002": [
+      {
+        "requirement_id": "GDPR002.1",
+        "category": "gdpr002",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR002.2",
+        "category": "gdpr002",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR002.3",
+        "category": "gdpr002",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR002.4",
+        "category": "gdpr002",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ],
+    "GDPR003": [
+      {
+        "requirement_id": "GDPR003.1",
+        "category": "gdpr003",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR003.2",
+        "category": "gdpr003",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR003.3",
+        "category": "gdpr003",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ],
+    "GDPR004": [
+      {
+        "requirement_id": "GDPR004.1",
+        "category": "gdpr004",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR004.2",
+        "category": "gdpr004",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR004.3",
+        "category": "gdpr004",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR004.4",
+        "category": "gdpr004",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ],
+    "GDPR005": [
+      {
+        "requirement_id": "GDPR005.1",
+        "category": "gdpr005",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR005.2",
+        "category": "gdpr005",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "GDPR005.3",
+        "category": "gdpr005",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ],
+    "COMMON001": [
+      {
+        "requirement_id": "COMMON001.1",
+        "category": "common001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "COMMON001.2",
+        "category": "common001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "COMMON001.3",
+        "category": "common001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      },
+      {
+        "requirement_id": "COMMON001.4",
+        "category": "common001",
+        "status": "needs_review",
+        "confidence_score": 0.0,
+        "explanation": "Error during analysis: string indices must be integers, not 'str'",
+        "suggested_actions": [
+          "Review requirement manually"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "report_metadata": {
+    "agent_name": "ComplianceAgent",
+    "timestamp": "2025-01-17T10:44:17.047347",
+    "analysis_type": "Compliance Analysis"
+  },
+  "summary": {
+    "total_requirements": 0,
+    "compliant": 0,
+    "non_compliant": 0,
+    "needs_review": 0,
+    "compliance_rate": 0
+  },
+  "detailed_results": {}
+}
