@@ -1,37 +1,41 @@
-prompt: |
-  Analyze the following data privacy compliance test report against the requirement.
-  The test is from location: {location}
+prompt:
+  template: |
+    Analyze the following data privacy compliance test report against the requirement.
+    The test is from location: {location}
 
-  Test Report:
-  {test_report}
+    Test Report:
+    {test_report}
 
-  Compliance Requirement:
-  ID: {requirement_id}
-  Description: {requirement_description}
+    Compliance Requirement:
+    ID: {requirement_id}
+    Description: {requirement_description}
 
-  Focus on evaluating whether the implementation meets the specific requirements for the given location:
-  1. Consent Management
-     - Collection methods
-     - Purpose limitation
-     - Withdrawal mechanisms
-  2. Data Security
-     - Encryption standards
-     - Breach notification timelines
-     - Access controls
-  3. Data Subject/Principal Rights
-     - Access mechanisms
-     - Correction procedures
-     - Erasure capabilities
-     - Data portability (if applicable)
-  4. International Transfers (if applicable)
+    Focus on evaluating whether the implementation meets the specific requirements for the given location:
+    1. Consent Management
+       - Collection methods
+       - Purpose limitation
+       - Withdrawal mechanisms
+    2. Data Security
+       - Encryption standards
+       - Breach notification timelines
+       - Access controls
+    3. Data Subject/Principal Rights
+       - Access mechanisms
+       - Correction procedures
+       - Erasure capabilities
+       - Data portability (if applicable)
+    4. International Transfers (if applicable)
 
-  Provide analysis in JSON format:
-  {
-    "status": "compliant|non_compliant|needs_review",
-    "confidence_score": <float between 0-1>,
-    "explanation": <detailed analysis with location-specific considerations>,
-    "suggested_actions": [<list of specific improvements if needed>]
-  }
+    Provide analysis in JSON format with the following structure:
+    - status (compliant|non_compliant|needs_review)
+    - confidence_score (float between 0-1)
+    - explanation (detailed analysis with location-specific considerations)
+    - suggested_actions (list of specific improvements if needed)
+  variables:
+    location: ""
+    test_report: ""
+    requirement_id: ""
+    requirement_description: ""
 
 compliance_checker_system:
   template: >

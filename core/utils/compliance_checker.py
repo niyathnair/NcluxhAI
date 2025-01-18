@@ -17,7 +17,7 @@ load_dotenv()
 
 # Add this temporarily to debug
 api_key = os.getenv("OPENAI_API_KEY")
-print(f"API Key loaded: {'Yes' if api_key else 'No'}")
+# print(f"API Key loaded: {'Yes' if api_key else 'No'}")
 
 class ComplianceChecker(BaseAgent):
     def __init__(self, ai_model: str = "gpt-4"):
@@ -51,16 +51,19 @@ class ComplianceChecker(BaseAgent):
             # Get the category from the requirement ID prefix
             category = requirement_id.split('.')[0].lower()
             
+            # Use the 'prompt' directly instead of trying to get template
             prompt = prompt_manager.get_prompt(
-                "prompt",  # Use the base prompt template
-                location=location,
-                test_report=json.dumps(test_data, indent=2),
-                requirement_id=requirement_id,
-                requirement_description=requirement.get('description', '')
+                "prompt",
+                variables={
+                    "location": location,
+                    "test_report": json.dumps(test_data, indent=2),
+                    "requirement_id": requirement_id,
+                    "requirement_description": requirement.get('description', '')
+                }
             )
             
             LOGGER.debug(f"Sending prompt to LLM for requirement {requirement_id}")
-            response = self.send_message(prompt)
+            response = await self.send_message(prompt)
             LOGGER.debug(f"Raw LLM response: {response}")
             
             # Try to extract JSON from the response
@@ -70,7 +73,6 @@ class ComplianceChecker(BaseAgent):
                 analysis = json.loads(json_str)
             except json.JSONDecodeError:
                 LOGGER.error(f"Failed to parse JSON from LLM response for requirement {requirement_id}")
-                LOGGER.debug(f"Attempted to parse: {response}")
                 return {
                     "requirement_id": requirement_id,
                     "category": category,

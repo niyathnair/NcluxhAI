@@ -9,6 +9,7 @@ __pycache__/
 .env
 result/
 .venv
+.nenv
 .venv/
 env/
 video_creation.log
